@@ -1,13 +1,4 @@
-/**
-* @license
-*
-* Regression.JS - Regression functions for javascript
-* http://tom-alexander.github.com/regression-js/
-*
-* copyright(c) 2013 Tom Alexander
-* Licensed under the MIT license.
-*
-**/
+
 
 ;(function() {
     'use strict';

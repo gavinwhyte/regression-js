@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>regression-js example</title>
+		<title>House prices prediciton based on the number of bedrooms</title>
 		<script src="http://code.jquery.com/jquery.min.js"></script>
-		<script src="http://tomalexander.co.nz/regression-js/jquery.flot.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.js"></script>
 		<script src="../build/regression.min.js"></script>
 
 		<script>
@@ -13,31 +13,19 @@
 			// Data
 			var data = [
 
-				[-10, -738],
-				[-9, -520],
-				[-8, -350],
-				[-7, -222],
-				[-6, -130],
-				[-5, -68],
-				[-4, -30],
-				[-3, -10],
-				[-2, -2],
-				[-1, 0],
-				[0, 2],
-				[1, 10],
-				[2, 30],
-				[3, 68],
-				[4, 130],
-				[5, 222],
-				[6, 350],
-				[7, 520],
-				[8, 738],
-				[9, 1010],
-				[10, 1342]
+				[0, 300000],
+				[1, 650000],
+				[2, 800000],
+				[2, 830000],
+				[3, 1200000],
+				[3, 1100000],
+				[4, 2200000],
+				[4, 2250000],
+
 			];
 
-			// do the regression (polynomial to the third degree)
-			var myRegression = regression('polynomial', data, 3);
+			// do the regression (polynomial to the specific degree)
+			var myRegression = regression('polynomial', data, 4);
 
 			// Plot the result
 			$.plot($('.graph'), [
@@ -73,7 +61,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<h1>regression-js</h1>
+			<h1>House Price Prediction Based on Bedrooms</h1>
 			<div class="graph"></div>
 			<h2></h2>
 		</div>

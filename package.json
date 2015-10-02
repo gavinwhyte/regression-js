@@ -1,10 +1,10 @@
 {
   "name": "regression",
   "description" : "Javascript least squares data fitting methods",
-  "author" : "Tom Alexander <me@tomalexander.co.nz>",
+  "author" : "Gavin <gavin@whyte.biz>",
   "version": "1.2.1",
   "license" : "MIT",
-  "repository": "Tom-Alexander/regression-js",
+  "repository": "gavinwhyte/regression-js",
   "keywords" : [
         "regression",
         "data",
